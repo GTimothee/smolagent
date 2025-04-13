@@ -1,3 +1,15 @@
+---
+title: {{title}}
+emoji: {{emoji}}
+colorFrom: {{colorFrom}}
+colorTo: {{colorTo}}
+sdk: {{sdk}}
+sdk_version: "{{sdkVersion}}"
+app_file: app.py
+pinned: false
+---
+
+
 # smolagent
 
 Experimenting with smolagents library
@@ -9,4 +21,4 @@ Experimenting with smolagents library
 See output at  http://127.0.0.1:7860
 
 ### To sync with space
-Follow this tutorial https://github.com/ruslanmv/How-to-Sync-Hugging-Face-Spaces-with-a-GitHub-Repository
+Follow this tutorial https://huggingface.co/docs/hub/en/spaces-github-actions
