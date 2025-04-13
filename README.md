@@ -1,10 +1,10 @@
 ---
-title: {{title}}
-emoji: {{emoji}}
-colorFrom: {{colorFrom}}
-colorTo: {{colorTo}}
-sdk: {{sdk}}
-sdk_version: "{{sdkVersion}}"
+title: smolagent
+emoji: 👋
+colorFrom: green
+colorTo: green
+sdk: gradio
+sdk_version: 5.25.0
 app_file: app.py
 pinned: false
 ---
