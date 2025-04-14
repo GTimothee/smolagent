@@ -4,8 +4,10 @@ from dotenv import load_dotenv
 from smolagents import HfApiModel
 from smolagents import Tool
 import gradio as gr
+from smolagents import GradioUI
 
 load_dotenv()
+
 model_id = "Qwen/Qwen2.5-Coder-32B-Instruct"
 
 def get_tools():
@@ -25,20 +27,8 @@ def get_tools():
     return tools_list, add_base_tools
 
 
-def agent_response(text_input):
-    response = agent.run(text_input)
-    return response
-
-
 if __name__ == "__main__":
     tools_list, add_base_tools = get_tools()
-    model = HfApiModel(model_id)
+    model = HfApiModel(model_id, provider=None)
     agent = CodeAgent(tools=tools_list, model=model, add_base_tools=add_base_tools, additional_authorized_imports=['web_search'])
-
-    demo = gr.Interface(
-        fn=agent_response,
-        inputs=["text"],
-        outputs=["text"],
-    )
-
-    demo.launch()
+    GradioUI(agent).launch()
