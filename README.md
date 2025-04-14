@@ -14,11 +14,12 @@ pinned: false
 
 Experimenting with smolagents library
 
+## synced with Github 
+- HF space repo: https://huggingface.co/spaces/GTimothee/smolagent
+- Github repo: https://github.com/GTimothee/smolagent
+
 ## Dev
 ### To run the app locally, debug, etc.
 ```bash pdm run app.py```
 
 See output at  http://127.0.0.1:7860
-
-### To sync with space
-Follow this tutorial https://huggingface.co/docs/hub/en/spaces-github-actions
