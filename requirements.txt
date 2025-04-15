@@ -1,0 +1,4 @@
+git+https://github.com/GTimothee/smolagents.git@add_audio_input#egg=smolagents
+python-dotenv 
+gradio 
+soundfile
