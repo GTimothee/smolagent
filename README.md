@@ -22,4 +22,4 @@ Experimenting with smolagents library
 ### To run the app locally, debug, etc.
 ```bash pdm run app.py```
 
-See output at  http://127.0.0.1:7860
+See output at http://127.0.0.1:7860
